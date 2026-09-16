@@ -62,3 +62,9 @@ Takeaways: GloVe's frequency-aware embeddings beat contextual BERT here — in l
 ## Reproduce
 
 The dataset is already preprocessed and binned (`popularity_bin` column). Load tag embeddings with `np.load('data/tag_embeddings.npy')`. Run the notebooks in order: `setup` → `preprocessing` → `Bin` → `attribute_embeddings` → `SVC` / `SVR` / `neural_nets_glove_bert`. See `data/ORIGINAL_SETUP_README.md` for the original environment setup notes.
+
+## Visualizations
+![Accuracy and weighted F1 by text encoding](visuals/song_encoding_metrics.png)
+![Median lyric word count by popularity tier, n=10,000 sample](visuals/song_lyric_length_by_tier.png)
+![Songs by genre tag, n=10,000 sample](visuals/song_genre_distribution.png)
+![Experiment pipeline](visuals/song_pipeline.png)
